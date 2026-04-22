@@ -5,7 +5,7 @@ description: Generate a formatted Excel report from company data with the compan
 
 # Excel Report Generator
 
-Create a polished Excel report from `resources/data.json` using the company logo, based on what the user asks for.
+Create a polished Excel report from `excel-report/resources/data.json` using the company logo, based on what the user asks for.
 
 ## Report Layout (always use this structure)
 
@@ -28,7 +28,7 @@ Parse the user's prompt for:
 - **Title**: derive a clear report title from the request (e.g., "Top Earners by Department")
 
 ### 2. Load and transform the data
-Read `resources/data.json`. Apply the filters, sorting, and transformations in Python. Keep it simple — a short script or inline logic is fine.
+Read `excel-report/resources/data.json`. Apply the filters, sorting, and transformations in Python. Keep it simple — a short script or inline logic is fine.
 
 ### 3. Generate the Excel file
 Use the bundled Node.js script at `excel-report/scripts/create_report.js`. It handles all layout, logo placement, and formatting. You only need to:
@@ -46,7 +46,7 @@ node excel-report/scripts/create_report.js \
   --title "Your Report Title" \
   --summary "Your summary sentence" \
   --data /tmp/report_data.json \
-  --logo resources/company_logo.png \
+  --logo excel-report/resources/company_logo.png \
   --output output/report_${TIMESTAMP}.xlsx
 ```
 
