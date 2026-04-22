@@ -1,0 +1,134 @@
+{
+  "skill_name": "excel-report",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Create a report showing the top 2 highest-paid employees in each department. Include their name, department, and salary. Sort departments alphabetically.",
+      "expected_output": "An Excel file in output/ with a timestamped name. Logo top-left, title beside it, summary row, then a data table with columns: Name, Department, Salary. 10 rows (2 per department × 5 departments), departments sorted A-Z, salary formatted as currency.",
+      "files": [],
+      "assertions": [
+        {
+          "text": "An .xlsx file was created in an output/ folder with a timestamp in the filename",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "The workbook has exactly 10 data rows (2 per department × 5 departments)",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "Departments appear in alphabetical order: Accounting, Marketing, Operation, Sales, Tech",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "Within each department, the 2 rows shown have the highest salaries for that department",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "The logo image is embedded in the workbook",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "A non-empty title appears beside the logo (not in column A)",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "A non-empty summary/description row appears below the logo area",
+          "passed": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "Generate an Excel report for the Tech and Sales departments only. Show all columns. Sort by salary descending within each department.",
+      "expected_output": "An Excel file with logo, title, summary, and a table showing employees from Tech and Sales only (20 rows). All columns included (name, department, salary). Within each department, rows sorted highest salary first. Salary formatted as currency.",
+      "files": [],
+      "assertions": [
+        {
+          "text": "An .xlsx file was created in an output/ folder with a timestamp in the filename",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "The workbook has exactly 20 data rows (10 Tech + 10 Sales)",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "No rows from Accounting, Marketing, or Operation departments are present",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "All source columns are present (name, department, salary)",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "Within each department, rows are sorted by salary from highest to lowest",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "The logo image is embedded in the workbook",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "A non-empty summary/description row appears below the logo area",
+          "passed": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a department salary summary report. For each department, show the department name, number of employees, average salary, and the highest salary. Sort by average salary from highest to lowest.",
+      "expected_output": "An Excel file with logo, title, summary, and an aggregated table — one row per department (5 rows). Columns: Department, Employee Count, Average Salary, Highest Salary. Sorted so highest average salary is at the top. Salary columns formatted as currency.",
+      "files": [],
+      "assertions": [
+        {
+          "text": "An .xlsx file was created in an output/ folder with a timestamp in the filename",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "The workbook has exactly 5 data rows (one per department)",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "All 5 departments are represented: Accounting, Marketing, Operation, Sales, Tech",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "The table includes columns for employee count, average salary, and highest salary",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "Rows are sorted by average salary descending (Tech should appear first with ~$129,400 avg)",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "The logo image is embedded in the workbook",
+          "passed": null,
+          "evidence": null
+        },
+        {
+          "text": "A non-empty summary/description row appears below the logo area",
+          "passed": null,
+          "evidence": null
+        }
+      ]
+    }
+  ]
+}
