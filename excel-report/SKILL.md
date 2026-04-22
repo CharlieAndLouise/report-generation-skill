@@ -11,8 +11,8 @@ Create a polished Excel report from `resources/data.json` using the company logo
 
 | Row | Content |
 |-----|---------|
-| 1 | Logo (A1, top-left, resize it to 20px multiply 20px) + Report title (B1, bold, beside logo, make sure the the column is aligned to data's last column) |
-| 2 | *(part of logo area — logo spans rows 1–2)* |
+| 1 | Logo (A1, top-left, spans A1:C2, sized ~100×55px) + Report title (D1, bold, beside logo) |
+| 2 | *(part of logo area — logo spans columns A–C and rows 1–2)* |
 | 3 | Summary line: italic, light gray background, merged across all data columns |
 | 4 | Column headers: bold, dark blue background, white text |
 | 5+ | Data rows: alternating white / light blue shading |
