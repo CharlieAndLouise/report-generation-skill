@@ -61,7 +61,7 @@ async function createReport(title, summary, data, logoPath, outputPath) {
     });
   }
 
-  const titleCell = ws.getCell('D1');
+  const titleCell = ws.getCell('C1');
   titleCell.value = title;
   titleCell.font = { bold: true, size: 14, color: { argb: TITLE_COLOR } };
   titleCell.alignment = { vertical: 'middle' };
