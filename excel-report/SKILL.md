@@ -24,7 +24,8 @@ Parse the user's prompt for:
 - **Filter**: what subset of data to show (e.g., "top 2 earners per department", "only Tech")
 - **Columns**: which fields to include and in what order (default: all fields)
 - **Grouping/sorting**: how to arrange rows (e.g., "grouped by department, sorted by salary desc")
-- **Formatting**: any special treatment (e.g., "salary as currency", "department in uppercase")
+- **Formatting**: any special treatment (e.g., "salary as currency", "department in uppercase").
+If the value is a number, use "thousand separator".
 - **Title**: derive a clear report title from the request (e.g., "Top Earners by Department")
 
 ### 2. Load and transform the data
