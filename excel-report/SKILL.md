@@ -67,4 +67,4 @@ Report the output file path and a one-line description of what the report contai
 - Salary values in the source data are strings — parse with `parseInt()` before comparing.
 - If the user doesn't specify columns, include all fields from the source data.
 - The title in the Excel header should be human-readable (title case, spaces not underscores).
-- `exceljs` is installed in `c:/work/NewSkills/node_modules` — require it with `const ExcelJS = require('exceljs')`.
+- `exceljs` is available — require it with `const ExcelJS = require('exceljs')`.
